@@ -19,4 +19,10 @@ public class FactorialTest {
 		Factorial fac = new Factorial(0);
 		assertEquals(1, fac.result());
 	}
+	
+	@Test
+	public void testOneFactorial() {
+		Factorial fac = new Factorial(1);
+		assertEquals(1, fac.result());
+	}
 }
