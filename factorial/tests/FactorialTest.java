@@ -1,5 +1,7 @@
 package factorial.tests;
 
+import factorial.exceptions.UnnaturalNumberException;
+
 import static org.junit.Assert.*;
 
 import org.junit.Test;
