@@ -22,6 +22,13 @@ public class FactorialTest {
 		assertEquals(1, fac.result());
 	}
 	
+	@Test(expected = ArithmeticException.class)
+	public void testArithmeticExceptionBigIntegerFactorial() {
+		Factorial fac = new Factorial(20);
+		// The expected value doesn't matter cause should catch the ArithmeticException.
+		assertEquals(1, fac.result());
+	}
+	
 	@Test
 	public void testZeroFactorial() {
 		Factorial fac = new Factorial(0);
