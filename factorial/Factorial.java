@@ -21,6 +21,9 @@ public class Factorial {
 		}else{
 			for(int i=this.number;i > 1; i--){
 				result = result * i;
+				if(result < 0){
+					throw new ArithmeticException("Result exceed maximum int range");
+				}
 			}
 		}
 
