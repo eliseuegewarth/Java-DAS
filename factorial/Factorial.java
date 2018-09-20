@@ -19,7 +19,7 @@ public class Factorial {
 		if(this.number <= 1) {
 			result = 1;
 		}else{
-			for(int i=this.number;i > 0; i--){
+			for(int i=this.number;i > 1; i--){
 				result = result * i;
 			}
 		}
