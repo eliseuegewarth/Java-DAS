@@ -14,6 +14,12 @@ public class FactorialTest {
 		assertEquals(120, fac.result());
 	}
 	
+	@Test(expected = UnnaturalNumberException.class)
+	public void testInvalidIntegerFactorial() {
+		Factorial fac = new Factorial(-1);
+		assertEquals(1, fac.result());
+	}
+	
 	@Test
 	public void testZeroFactorial() {
 		Factorial fac = new Factorial(0);
