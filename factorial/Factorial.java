@@ -8,6 +8,11 @@ public class Factorial {
 	}
 	
 	public int result() {
-		return 120;
+		int result = 120;
+		
+		if(this.number == 0) {
+			result = 1;
+		}
+		return result;
 	}
 }
