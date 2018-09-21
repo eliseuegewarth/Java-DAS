@@ -6,13 +6,18 @@ import java.util.Arrays;
 import java.util.Collection;
 
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
 import factorial.Factorial;
+import factorial.tests.category.FactorialCategory;
+import factorial.tests.category.FactorialParameterizedCategory;
+import factorial.tests.category.ValidFactorialCategory;
 
 @RunWith(Parameterized.class)
+@Category({FactorialCategory.class, ValidFactorialCategory.class, FactorialParameterizedCategory.class})
 public class ValidFactorialParameterizedTest {
 
 	@Parameters

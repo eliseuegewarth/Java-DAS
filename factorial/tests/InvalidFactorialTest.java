@@ -1,20 +1,18 @@
 package factorial.tests;
 
 import factorial.exceptions.UnnaturalNumberException;
+import factorial.tests.category.FactorialCategory;
+import factorial.tests.category.InvalidEntriesCategory;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import factorial.Factorial;
 
+@Category({FactorialCategory.class, InvalidEntriesCategory.class})
 public class InvalidFactorialTest {
-	
-	@Test(expected = UnnaturalNumberException.class)
-	public void testInvalidIntegerFactorial() {
-		Factorial fac = new Factorial(-1);
-		assertEquals(1, fac.result());
-	}
 	
 	@Test(expected = ArithmeticException.class)
 	public void testArithmeticExceptionBigIntegerFactorial() {
