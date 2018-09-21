@@ -8,7 +8,7 @@ import org.junit.Test;
 
 import factorial.Factorial;
 
-public class FactorialTest {
+public class InvalidFactorialTest {
 	
 	@Test(expected = UnnaturalNumberException.class)
 	public void testInvalidIntegerFactorial() {
