@@ -13,16 +13,16 @@ public class Factorial {
 		this.number = number;
 	}
 	
-	public int result() {
-		int result = 1; // 1 is the minimal factorial
+	public long result() {
+		long result = 1; // 1 is the minimal factorial
 		
 		if(this.number <= 1) {
 			result = 1;
 		}else{
-			for(int i=this.number;i > 1; i--){
+			for(long i=(long)this.number;i > 1; i--){
 				result = result * i;
 				if(result < 0){
-					throw new ArithmeticException("Result exceed maximum int range");
+					throw new ArithmeticException("Result exceed maximum long range");
 				}
 			}
 		}
